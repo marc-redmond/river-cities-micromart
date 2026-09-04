@@ -15,7 +15,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/8 bg-paper/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5 sm:px-8">
-        <a href="#top" className="flex items-center gap-3" aria-label="River Cities MicroMart home">
+        <a href="#top" className="flex items-center gap-3" aria-label="River City MicroMarkets home">
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue text-white">
             <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" aria-hidden="true">
               <rect x="6" y="3" width="12" height="18" rx="2.2" stroke="currentColor" strokeWidth="1.7" />
@@ -24,9 +24,9 @@ export function Header() {
           </span>
           <span className="leading-tight">
             <span className="block text-[11px] font-semibold uppercase tracking-[0.22em] text-blue">
-              River Cities
+              River City
             </span>
-            <span className="block text-sm font-medium text-ink">MicroMart</span>
+            <span className="block text-sm font-medium text-ink">MicroMarkets</span>
           </span>
         </a>
 

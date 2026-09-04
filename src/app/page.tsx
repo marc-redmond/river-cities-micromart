@@ -120,7 +120,7 @@ export default function Home() {
               Fresh food in the places people already are.
             </h2>
             <p className="mt-6 text-base leading-7 text-muted">
-              River Cities MicroMart provides fully managed smart coolers and micro markets for offices, gyms,
+              River City MicroMarkets provides fully managed smart coolers and micro markets for offices, gyms,
               warehouses, and apartment communities. Employees, residents, and guests get convenient 24/7 access to
               fresh food, snacks, and beverages — without any cost or maintenance for the property.
             </p>
@@ -135,12 +135,13 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="relative min-h-[320px] overflow-hidden rounded-[2rem]">
+          <div className="relative aspect-[16/10] w-full self-start overflow-hidden rounded-[2rem] lg:sticky lg:top-24">
             <Image
-              src="/photos/smart-store.webp"
-              alt="A wood-paneled Smart Store micro market in a bright lounge"
+              src="/photos/about-lounge.jpg"
+              alt="People using a wood-paneled Smart Store micro market in a bright lounge"
               fill
-              className="object-cover"
+              quality={90}
+              className="object-cover object-center"
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>
@@ -333,7 +334,7 @@ export default function Home() {
 
       <footer className="bg-night px-5 py-10 text-sm text-white/55 sm:px-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <p>River Cities MicroMart</p>
+          <p>River City MicroMarkets</p>
           <p>Smart coolers &amp; micro markets · Richmond &amp; Fredericksburg</p>
           <a href="tel:5403851504" className="hover:text-mint">
             (540) 385-1504

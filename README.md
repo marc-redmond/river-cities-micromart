@@ -1,6 +1,6 @@
-# River Cities MicroMart
+# River City MicroMarkets
 
-Marketing site for River Cities MicroMart — fully managed smart coolers and micro markets in Richmond and Fredericksburg, Virginia.
+Marketing site for River City MicroMarkets — fully managed smart coolers and micro markets in Richmond and Fredericksburg, Virginia.
 
 ## Local development
 

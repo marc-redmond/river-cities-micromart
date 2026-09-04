@@ -15,8 +15,8 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rivercitiesmarkets.com"),
   title: {
-    default: "River Cities MicroMart | Smart coolers in Richmond & Fredericksburg",
-    template: "%s | River Cities MicroMart",
+    default: "River City MicroMarkets | Smart coolers in Richmond & Fredericksburg",
+    template: "%s | River City MicroMarkets",
   },
   description:
     "Fully managed smart coolers and micro markets for offices, gyms, warehouses, and apartments in Richmond and Fredericksburg, Virginia. Fresh food 24/7. No cost to host.",
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     "smart fridge",
     "Richmond Virginia",
     "Fredericksburg",
-    "River Cities MicroMart",
+    "River City MicroMarkets",
   ],
   openGraph: {
-    title: "River Cities MicroMart",
+    title: "River City MicroMarkets",
     description:
       "Smart coolers and micro markets at your fingertips. Serving Richmond and Fredericksburg.",
     url: "https://www.rivercitiesmarkets.com",
-    siteName: "River Cities MicroMart",
+    siteName: "River City MicroMarkets",
     locale: "en_US",
     type: "website",
     images: [{ url: "/photos/gym.webp", width: 1152, height: 648 }],
