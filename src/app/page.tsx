@@ -321,10 +321,10 @@ export default function Home() {
               </a>
               <p className="mt-3 text-sm text-ink/70">Richmond · Fredericksburg</p>
               <a
-                href="https://www.rivercitiesmarkets.com"
+                href="https://rivercitymicromarkets.com"
                 className="mt-1 inline-block text-sm text-ink/70 underline-offset-4 hover:underline"
               >
-                www.RiverCitiesMarkets.com
+                rivercitymicromarkets.com
               </a>
             </div>
             <ContactForm />
@@ -336,9 +336,14 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p>River City MicroMarkets</p>
           <p>Smart coolers &amp; micro markets · Richmond &amp; Fredericksburg</p>
-          <a href="tel:5403851504" className="hover:text-mint">
-            (540) 385-1504
-          </a>
+          <div className="flex flex-col gap-1 sm:items-end">
+            <a href="https://rivercitymicromarkets.com" className="hover:text-mint">
+              rivercitymicromarkets.com
+            </a>
+            <a href="tel:5403851504" className="hover:text-mint">
+              (540) 385-1504
+            </a>
+          </div>
         </div>
       </footer>
     </div>

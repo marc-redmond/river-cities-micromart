@@ -13,7 +13,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.rivercitiesmarkets.com"),
+  metadataBase: new URL("https://rivercitymicromarkets.com"),
   title: {
     default: "River City MicroMarkets | Smart coolers in Richmond & Fredericksburg",
     template: "%s | River City MicroMarkets",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "River City MicroMarkets",
     description:
       "Smart coolers and micro markets at your fingertips. Serving Richmond and Fredericksburg.",
-    url: "https://www.rivercitiesmarkets.com",
+    url: "https://rivercitymicromarkets.com",
     siteName: "River City MicroMarkets",
     locale: "en_US",
     type: "website",
