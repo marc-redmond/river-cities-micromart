@@ -79,16 +79,28 @@ export function ContactForm() {
           </select>
         </label>
       </div>
-      <label className="grid gap-1.5 text-sm">
-        <span className="text-ink/80">Phone</span>
-        <input
-          required
-          name="phone"
-          type="tel"
-          autoComplete="tel"
-          className="rounded-2xl border border-ink/10 bg-white px-4 py-3 outline-none ring-mint focus:ring-2"
-        />
-      </label>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <label className="grid gap-1.5 text-sm">
+          <span className="text-ink/80">Email</span>
+          <input
+            required
+            name="email"
+            type="email"
+            autoComplete="email"
+            className="rounded-2xl border border-ink/10 bg-white px-4 py-3 outline-none ring-mint focus:ring-2"
+          />
+        </label>
+        <label className="grid gap-1.5 text-sm">
+          <span className="text-ink/80">Phone</span>
+          <input
+            required
+            name="phone"
+            type="tel"
+            autoComplete="tel"
+            className="rounded-2xl border border-ink/10 bg-white px-4 py-3 outline-none ring-mint focus:ring-2"
+          />
+        </label>
+      </div>
       <label className="grid gap-1.5 text-sm">
         <span className="text-ink/80">Anything we should know?</span>
         <textarea

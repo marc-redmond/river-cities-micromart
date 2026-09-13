@@ -19,11 +19,16 @@ export async function submitContact(
   const business = String(formData.get("business") || "").trim();
   const city = String(formData.get("city") || "").trim();
   const place = String(formData.get("place") || "").trim();
+  const email = String(formData.get("email") || "").trim();
   const phone = String(formData.get("phone") || "").trim();
   const message = String(formData.get("message") || "").trim();
 
-  if (!name || !business || !phone) {
-    return { ok: false, error: "Please fill in your name, business, and phone." };
+  if (!name || !business || !email || !phone) {
+    return { ok: false, error: "Please fill in your name, business, email, and phone." };
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return { ok: false, error: "Please enter a valid email address." };
   }
 
   const apiKey = process.env.RESEND_API_KEY;
@@ -39,6 +44,7 @@ export async function submitContact(
     `Business / property: ${business}`,
     `City: ${city || "—"}`,
     `Space type: ${place || "—"}`,
+    `Email: ${email}`,
     `Phone: ${phone}`,
     "",
     message || "(No extra notes)",
@@ -49,8 +55,9 @@ export async function submitContact(
     from: process.env.RESEND_FROM_EMAIL ?? CONTACT_FROM,
     to: CONTACT_TO,
     subject: `Site visit request — ${business}`,
+    replyTo: email,
     text: lines.join("\n"),
-    html: contactEmailHtml({ name, business, city, place, phone, message }),
+    html: contactEmailHtml({ name, business, city, place, email, phone, message }),
     tags: [{ name: "category", value: "contact-form" }],
   });
 
@@ -70,6 +77,7 @@ function contactEmailHtml({
   business,
   city,
   place,
+  email,
   phone,
   message,
 }: {
@@ -77,6 +85,7 @@ function contactEmailHtml({
   business: string;
   city: string;
   place: string;
+  email: string;
   phone: string;
   message: string;
 }) {
@@ -85,6 +94,7 @@ function contactEmailHtml({
     ["Business / property", business],
     ["City", city || "—"],
     ["Space type", place || "—"],
+    ["Email", email],
     ["Phone", phone],
   ]
     .map(
