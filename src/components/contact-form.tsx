@@ -17,10 +17,10 @@ export function ContactForm() {
           Thanks — we got your details and will be in touch shortly. Prefer a quicker route? Call us now.
         </p>
         <a
-          href="tel:5403851504"
+          href="tel:8045060288"
           className="mt-6 inline-flex rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper"
         >
-          Call (540) 385-1504
+          Call 804-506-0288
         </a>
       </div>
     );

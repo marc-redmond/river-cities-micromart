@@ -30,7 +30,7 @@ export async function submitContact(
   if (!apiKey) {
     return {
       ok: false,
-      error: "The form isn’t set up yet. Please call (540) 385-1504.",
+      error: "The form isn’t set up yet. Please call 804-506-0288.",
     };
   }
 
@@ -58,7 +58,7 @@ export async function submitContact(
     console.error("Resend contact form error", error.name);
     return {
       ok: false,
-      error: "We couldn’t send that just now. Please call (540) 385-1504.",
+      error: "We couldn’t send that just now. Please call 804-506-0288.",
     };
   }
 

@@ -81,10 +81,10 @@ export default function Home() {
                   Schedule a free site visit
                 </a>
                 <a
-                  href="tel:5403851504"
+                  href="tel:8045060288"
                   className="rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-paper transition hover:border-mint hover:text-mint"
                 >
-                  (540) 385-1504
+                  804-506-0288
                 </a>
               </div>
             </div>
@@ -316,8 +316,8 @@ export default function Home() {
                 Get in touch by phone or the form. We’ll assess your location and recommend the best smart cooler or
                 micro market solution — at no cost.
               </p>
-              <a href="tel:5403851504" className="mt-8 block font-display text-4xl italic text-ink sm:text-5xl">
-                (540) 385-1504
+              <a href="tel:8045060288" className="mt-8 block font-display text-4xl italic text-ink sm:text-5xl">
+                804-506-0288
               </a>
               <p className="mt-3 text-sm text-ink/70">Richmond · Fredericksburg</p>
               <a
@@ -340,8 +340,8 @@ export default function Home() {
             <a href="https://rivercitymicromarkets.com" className="hover:text-mint">
               rivercitymicromarkets.com
             </a>
-            <a href="tel:5403851504" className="hover:text-mint">
-              (540) 385-1504
+            <a href="tel:8045060288" className="hover:text-mint">
+              804-506-0288
             </a>
           </div>
         </div>

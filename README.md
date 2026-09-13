@@ -37,4 +37,4 @@ Submissions are emailed to `hq@rivercitymicromarkets.com` through [Resend](https
 
 Optional: set `RESEND_FROM_EMAIL` if you want to send from an address other than `hq@rivercitymicromarkets.com`.
 
-The phone number on the site is **(540) 385-1504**.
+The phone number on the site is **804-506-0288**.
